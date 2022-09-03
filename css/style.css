@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;padding: 0; box-sizing: border-box;
+}
+
+body
+{
+    background-color: azure;
+}
+
+.slider h1
+{
+    margin-bottom: 1rem;
+}
+
+.slider
+{
+    display: flex; flex-direction: column;
+    margin: 4rem 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider .sliderBox
+{
+    position: relative; margin: 0 auto;
+    display: flex; max-width: 50rem;
+}
+
+.slider .sliderBox .slb 
+{
+    display: none;
+}
+
+.slider .sliderBox .slb.active
+{
+    display: block;
+}
+
+.slider .sliderBox .slb img
+{
+    width: 100%; height: 35rem;
+    object-fit: cover;
+}
+
+.slider .buttons
+{
+    width: 35rem;
+    display: flex; position: absolute;
+    justify-content: space-between;max-width: 35rem;
+    justify-items: center; align-items: center;
+}
+
+.slider .buttons span
+{
+    background: white;
+    padding:.6rem;
+    opacity:.5;cursor: pointer;
+}
+
+.slider .buttons span i
+{
+    font-size: 1.7rem;
+    opacity: .5;
+}
+
+.slider .buttons span:hover
+{
+    opacity: 1;
+}
+
+.slider .buttons span:hover i
+{
+    opacity: 1;
+}
+
+.slider .indicatorsBox 
+{
+    position: relative;
+    top: -3rem; width: 35rem;
+}
+.slider .indicatorsBox .indicators
+{
+    display: flex;
+    list-style: none; 
+    justify-content: space-between;
+    align-items: center;
+    width: 15rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider .indicatorsBox .indicators li
+{
+    width: 1.5rem; 
+    height: 1.5rem; 
+    border-radius: 50%;
+    border: .1rem solid red;
+    cursor: pointer;
+    transition: .5s; 
+}
+
+.slider .indicatorsBox .indicators li.active
+{
+    background: midnightblue;
+    border-color: midnightblue;
+}
